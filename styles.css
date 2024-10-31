@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #333;
+    background: linear-gradient(to bottom, #f4f4f9, #e1e5ea);
+    line-height: 1.6;
+}
+
+/* Header styling with shadow and gradient */
+header {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #05149e, #04f1de);
+    color: #f4f4f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+}
+header:hover{
+    background: linear-gradient(135deg, #04f1de , #05149e);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    width: 80%;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid #333;
+    transition: color 0.3s ease;
+}
+
+/* About Section */
+#about p, #contact p {
+    margin-top: 1.2rem;
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Skills Section with 3D cards */
+#skills ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+#skills li {
+    background: linear-gradient(135deg, #333, #444);
+    color: #f4f4f9;
+    padding: 0.7rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), -3px -3px 6px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills li:hover {
+    transform: translateY(-4px);
+    box-shadow: 3px 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Projects Section with shadowed cards */
+.project-card {
+    background: linear-gradient(to right, #ffffff, #f7f7f7);
+    border: 1px solid #ddd;
+    padding: 1.2rem;
+    margin-top: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-card h3 {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Contact Section */
+#contact button {
+    background: linear-gradient(135deg, #333, #555);
+    color: #f4f4f9;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), -3px -3px 6px rgba(255, 255, 255, 0.1);
+}
+
+#contact button:hover {
+    background-color: #444;
+    transform: translateY(-3px);
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
